@@ -3,7 +3,6 @@ node('docker-slave'){
 	   checkout scm
 	}
 	stage('Run test'){
-	   sh 'cd test'
 	   sh '$MAVEN tests'
 	}
 	stage('build'){
