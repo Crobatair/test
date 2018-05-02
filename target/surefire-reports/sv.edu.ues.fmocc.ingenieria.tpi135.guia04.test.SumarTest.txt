@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: sv.edu.ues.fmocc.ingenieria.tpi135.guia04.test.SumarTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.124 sec
