@@ -9,11 +9,6 @@ node('docker-slave'){
 	   sh '$MAVEN -B -DskipTests clean package'
 	}
         stage('copy artifact'){
-	   script {
-                 step ([$class: 'CopyArtifact',
-                 projectName: 'Test',
-                 filter: "target/test*.jar",
-                 target: 'Build']);
-             }	   
+           step([$class: 'ArtifactArchiver', artifacts: 'target/*.jar'])
 	}    
 }
