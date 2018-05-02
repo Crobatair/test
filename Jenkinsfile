@@ -12,7 +12,7 @@ node('docker-slave'){
 	   script {
                  step ([$class: 'CopyArtifact',
                  projectName: 'Test',
-                 filter: "packages/*.jar",
+                 filter: "target/test*.jar",
                  target: 'Build']);
              }	   
 	}    
