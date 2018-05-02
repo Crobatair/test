@@ -3,7 +3,7 @@ node('docker-slave'){
 	   checkout scm
 	}
 	stage('Run test'){
-	   sh '$MAVEN tests'
+	   sh '$MAVEN test'
 	}
 	stage('build'){
 	   sh '$MAVEN -B -DskipTests clean package'
